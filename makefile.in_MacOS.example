@@ -1,0 +1,16 @@
+# Compilers (only C is needed)
+CC   = gcc
+# timer 
+OBJ_TIME = mactime.o  
+LIB0 = 
+
+## linker - includes libraries 
+LINK = $(CC) -framework accelerate
+
+# ar 
+AR = ar rv
+RANLIB = ranlib
+
+## libraries: blas, lapack
+LIBLAPACK = -llapack -lblas
+
